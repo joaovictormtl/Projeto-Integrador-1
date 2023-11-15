@@ -15,18 +15,19 @@
                     </div>
 
                     <ul class="nav-links">
-                        <li><a href="index.html">Home</a></li>
+                        <ion-icon class="fechar icon" name="close-outline"></ion-icon>
+                        <li><a href="#hero-section">Home</a></li>
                         <li><a href="#informativo">Conteúdos</a></li>
                         <li><a href="comunidade.html">Comunidade</a></li>
                         <li><a href="locais-apoio.html">Locais de apoio</a></li>
+                        <a class="btn" href="entrar.html">Entrar</a>
                     </ul><!--nav-links-->
-
-                    <a class="btn" href="entrar.html">Entrar</a>
+                    <ion-icon class="menu icon" name="menu-outline"></ion-icon>
                 </nav><!--nav-bar-->
             </div><!--center-->
         </header>
 
-        <section class="hero-section">
+        <section class="hero-section" id="hero-section">
             <div class="overlay"></div><!--overlay-->
             <div class="center">
                 <div class="hero-content">
@@ -133,6 +134,76 @@
                     </div><!--categorias-box-->
                 </a>
             </div><!--categorias-container-->
-        </section>
+        </section><!--categorias-->
+
+        <section class="apoio center">
+            <div class="apoio-content">
+                <div class="apoio-img">
+                    <img src="img/pessoas.png" alt=""/>
+                </div><!--apoio-img-->
+
+                <div class="apoio-text">
+                    <span>Busque Ajuda</span>
+                    <h2>Conheça locais de apoio perto de você</h2>
+                    <p>Fornecemos uma lista de locais de apoio na região metropolitana de Recife para você buscar apoio pessoalmente, fazer exames e consultas.</p>
+                    <a href="#" class="btn">Saiba Mais</a>
+                </div><!--apoio-text-->
+            </div><!--apoio-content-->
+        </section><!--apoio-->
+
+        <section class="testemunhas center">
+            <div class="testemunhas-left">
+                <span>testemunhas</span>
+                <h2>A experiência<br> de quem nos<br> acompanha</h2>
+            </div><!--testemunhas-left-->
+
+            <div class="testemunhas-right">
+                <p class="relato">“O Renascer me ajudou a enxergar alguns malefícios do cigarro eletrônico que nem conhecia e pude trocar experiências com outras pessoas que estavam passando pelo mesmo problema.”</p>
+
+                <div class="perfil-change">
+                    <div class="perfil">
+                        <div class="perfil-img"><img src="img/lucca.jpg" alt=""/></div>
+
+                        <div class="perfil-info">
+                             <span class="perfil-nome">Lucca Dante</span>
+                            <span class="perfil-location">Recife, Pe</span>
+                        </div><!--perfil-info-->
+                    </div><!--perfil-->
+
+                    <div class="change">
+                        <div class="left"><ion-icon name="arrow-back-outline"></ion-icon></div>
+                        <div class="right"><ion-icon name="arrow-forward-outline"></ion-icon></div>
+                    </div><!--change-->
+
+                </div><!--perfil-change-->
+            </div><!--testemunhas-right-->
+        </section><!--testemunhas-->
+
+        <footer>
+            <div class="center">
+                <div class="footer-content">
+                    <h2>Cadastre-se para obter novas informações e fazer parte da nossa comunidade!</h2>
+
+                    <div class="footer-email">
+                        <input type="email" placeholder="E-mail"/>
+                        <a class="btn" href="#">Cadastrar</a>
+                    </div><!--footer-email-->
+                </div><!--footer-content-->
+            </div><!--center-->
+
+            <div class="footer-info">
+                <span>Todos os direitos reservados</span>
+
+                <div class="social-links">
+                    <a href=""><ion-icon class="social" name="logo-facebook"></ion-icon></a>
+                    <a href=""><ion-icon class="social" name="logo-twitter"></ion-icon></a>
+                    <a href=""><ion-icon class="social" name="logo-instagram"></ion-icon></a>
+                </div>
+            </div>
+        </footer>
     </body>
+
+    <script src="js/home.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </html>
