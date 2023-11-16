@@ -95,8 +95,6 @@ header{
     color: var(--branco);
 }
 
-
-
 .hero-section{
     display: flex;
     flex-direction: column;
@@ -603,6 +601,18 @@ a .social{
         background: #cbcbcb;
     }
 
+    /* hero */
+
+    .hero-content{
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-para{
+        text-align: center;
+        margin: 30px 0;
+    }
+
     /* informativo */
 
     .informativo{
@@ -640,4 +650,24 @@ a .social{
     .about-text{
         width: 100%;
     }
+
+    /* apoio */
+
+    .apoio-text{
+        width: 80%;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .apoio-text h2{
+        font-size: 30px;
+    }
+
+    .apoio-text p{
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 512px){
+
 }
