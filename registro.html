@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Registro</title>
+    <link rel="icon" href="img/l-r.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/estilo-registro.css" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="center">
+            <nav class="nav-bar">
+                <div class="nav-logo">
+                    <a href="index.html"><img src="img/logo.png" alt="Logo do Site"></a>
+                </div>
+
+                <ul class="nav-links">
+                    <ion-icon class="fechar icon" name="close-outline"></ion-icon>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="comunidade.html">Comunidade</a></li>
+                    <li><a href="conteudos.html">Conteúdos</a></li>
+                    <li><a href="locais-apoio.html">Locais de apoio</a></li>                      
+                </ul><!--nav-links-->
+                <ion-icon class="menu icon" name="menu-outline"></ion-icon>
+            </nav><!--nav-bar-->
+        </div><!--center-->
+    </header>
+
+    
+
+    <section class="register-section">
+        <div class="login-content">
+            <div class="image-container">
+                <img src="img/folhas.png" alt="Imagem de exemplo">
+            </div>
+            <div class="form-container">
+                <h1>Cadastre-se</h1>
+                <form id="loginForm">
+                    <div><input type="email" id="emailInput" placeholder="E-mail: " required></div>
+                    <div><input type="password" id="senhaInput" placeholder="Senha: " required></div>
+                    <div><input type="password" placeholder="Confirmar Senha: "></div>
+                    <button type="button" onclick="redirecionarSePreenchido()">Registre-se</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        var formularioEnviado = false;
+    
+        function redirecionarSePreenchido() {
+            if (formularioEnviado) {
+                alert("Formulário já enviado. Aguarde...");
+                return false;
+            }
+    
+            // Obter os valores dos campos de e-mail e senha
+            var email = document.getElementById('emailInput').value;
+            var senha = document.getElementById('senhaInput').value;
+    
+            // Verificar se os campos estão preenchidos
+            if (email !== '' && senha !== '') {
+                // Marcar o formulário como enviado para evitar envios múltiplos
+                formularioEnviado = true;
+    
+                // Redirecionar apenas se os campos estiverem preenchidos
+                window.location.href = "perfil.html";
+            } else {
+                // Mostrar uma mensagem de erro ou fazer o que for apropriado
+                alert("Preencha todos os campos!");
+            }
+        }
+    </script>
+
+
+
+   
+
+    <section class="about center">
+        <div class="container">
+           
+        </div>
+    </section>
+
+    <footer>
+        <div class="nav-logo">
+            <a href="index.html"><img src="img/logo.png" alt="Logo do Site"></a>
+        </div>
+
+        <div class="footer-info">
+            <span>Todos os direitos reservados</span>
+            <div class="social-links">
+                <a href=""><ion-icon class="social" name="logo-facebook"></ion-icon></a>
+                <a href=""><ion-icon class="social" name="logo-twitter"></ion-icon></a>
+                <a href=""><ion-icon class="social" name="logo-instagram"></ion-icon></a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/entrar.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
